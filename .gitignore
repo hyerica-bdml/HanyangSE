@@ -1,0 +1,5 @@
+src/test/java/*
+output/
+data/
+target/
+tmp/
