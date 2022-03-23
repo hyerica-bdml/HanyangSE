@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
          
-    <groupId>edu.hanyang.bigdatair</groupId>
+    <groupId>io.github.hyerica-bdml</groupId>
     <artifactId>hanyangse</artifactId>
     <version>1.0</version>
     <name>Hanyang Search Engine</name>
@@ -23,15 +23,21 @@
       <name>Younghoon Kim</name>
       <email>nongaussian@hanyang.ac.kr</email>
       <organization>Hanyang University</organization>
-      <organizationUrl>http://www.hanyang.ac.kr</organizationUrl>
+      <organizationUrl>http://nongaussian.github.io</organizationUrl>
     </developer>
        <developer>
       <name>Jaeyoung Lee</name>
       <email>wayexists02@gmail.com</email>
       <organization>Hanyang University</organization>
-      <organizationUrl>http://www.hanyang.ac.kr</organizationUrl>
+      <organizationUrl>http://nongaussian.github.io</organizationUrl>
     </developer>
   </developers>
+         
+         <scm>
+  <connection>scm:git:git://github.com/hyerica-bdml/HanyangSE.git</connection>
+  <developerConnection>scm:git:ssh://github.com:hyerica-bdml/HanyangSE.git</developerConnection>
+  <url>http://github.com/hyerica-bdml/HanyangSE/tree/master</url>
+</scm>
          
          
     <properties>
