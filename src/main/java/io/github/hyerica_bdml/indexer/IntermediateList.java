@@ -1,0 +1,7 @@
+package io.github.hyerica_bdml.indexer;
+
+public interface IntermediateList {
+    void putDocId(int docId);
+    int getDocumentCount();
+    int getDocumentId(int location);
+}
