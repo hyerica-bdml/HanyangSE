@@ -116,7 +116,7 @@ public class InvertedList {
                 cnt++;
             }
             
-            // 마지막에 write 해줘야함
+            // to be written on the tail
             if (!content.isEmpty()) {
                 content.set(content.size() - numOfPos - 1, numOfPos);
                 writeToPostingFile(postingListFile, numOfDoc, docID, content);

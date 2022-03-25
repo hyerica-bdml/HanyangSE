@@ -1,8 +1,14 @@
 package io.github.hyerica_bdml.indexer;
 
+/**
+ * Query plan tree
+ * 
+ * @author Younghoon Kim
+ *
+ */
 public class QueryPlanTree {
     /**
-     * @author yhkim
+     * Node type of query plan trees
      *
      * OPRAND: an operand; i.e., a term
      *
@@ -13,17 +19,58 @@ public class QueryPlanTree {
      * OP_REMOVE_POS: projection with doc ids; remove all
      *             positional information from inverted
      *             list and keep doc ids only - unary
+     *             
+     * @author Younghoon Kim
      */
-    public enum NODE_TYPE { OPRAND, OP_AND, OP_SHIFTED_AND, OP_REMOVE_POS }
+    public enum NODE_TYPE {
+    	/**
+    	 * Operand
+    	 */
+    	OPRAND,
+    	/**
+    	 * Intersection without considering position (binary)
+    	 */
+    	OP_AND,
+    	/**
+    	 * Positional intersection (binary)
+    	 */
+    	OP_SHIFTED_AND,
+    	/**
+    	 * Changing a positional list to a non-positional list (unary)
+    	 */
+    	OP_REMOVE_POS
+    }
 
+    /**
+     * Class for the node in query plan tree
+     * 
+     * @author Younghoon Kim
+     *
+     */
     public class QueryPlanNode {
+        /**
+         * The type of node
+         */
         public NODE_TYPE type;
+        /**
+         * The left node
+         */
         public QueryPlanNode left;
+        /**
+         * The right node
+         */
         public QueryPlanNode right;
-        public int shift;               /* shift has a value when type = OP_SHIFTED_AND
-		                                   constraint on the positions of terms;
-		                                   right term's pos - left term's pos = shift */
-        public int termid;              /* termid has a value when type = OPRAND */
+        /**
+         * shift has a value when type = OP_SHIFTED_AND
+		 * constraint on the positions of terms in the query string
+		 * 
+		 * shift = (right term's pos - left term's pos)
+         */
+        public int shift;
+        /**
+         * termid has a value when type = OPRAND
+         */
+        public int termid;
     }
 
     /**

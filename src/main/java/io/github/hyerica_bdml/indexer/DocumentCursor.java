@@ -2,6 +2,12 @@ package io.github.hyerica_bdml.indexer;
 
 import java.io.IOException;
 
+/**
+ * The interface of accessing inverted list
+ * 
+ * @author Younghoon Kim
+ *
+ */
 public abstract class DocumentCursor {
     public enum LIST_TYPE { POSLIST, NONPOSLIST };
     public LIST_TYPE type = null;
