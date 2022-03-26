@@ -2,15 +2,15 @@ package edu.hanyang.utils;
 
 import edu.hanyang.indexer.IntermediatePositionalList;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class IntermediatePositionalListImpl implements IntermediatePositionalList {
+public class TestIntermediatePositionalList implements IntermediatePositionalList {
+    public List<Integer> docIdList;
+    public List<Integer> posList;
 
-    private List<Integer> docIdList;
-    private List<Integer> posList;
-
-    public IntermediatePositionalListImpl() {
+    public TestIntermediatePositionalList() {
         docIdList = new LinkedList<>();
         posList = new LinkedList<>();
     }

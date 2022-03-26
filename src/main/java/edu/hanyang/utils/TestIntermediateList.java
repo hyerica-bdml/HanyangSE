@@ -2,20 +2,19 @@ package edu.hanyang.utils;
 
 import edu.hanyang.indexer.IntermediateList;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
-public class IntermediateListImpl implements IntermediateList {
+public class TestIntermediateList implements IntermediateList {
+    public List<Integer> docList;
 
-    private List<Integer> docList;
-
-    public IntermediateListImpl() {
-        docList = new LinkedList<>();
+    public TestIntermediateList() {
+        docList = new ArrayList<>();
     }
 
     @Override
     public void putDocId(int docId) {
-        this.docList.add(docId);
+        docList.add(docId);
     }
 
     @Override
