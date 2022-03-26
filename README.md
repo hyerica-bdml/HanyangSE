@@ -3,3 +3,6 @@
 # HanyangSE
 
 Interfaces and utilities for implementing the modules of HanyangSE search engine
+
+## License
+This project is licensed under [MIT license](http://opensource.org/licenses/MIT).
