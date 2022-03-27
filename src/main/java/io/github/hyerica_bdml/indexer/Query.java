@@ -1,4 +1,4 @@
-package edu.hanyang.indexer;
+package io.github.hyerica_bdml.indexer;
 
 public class Query {
     public int numOfWord;

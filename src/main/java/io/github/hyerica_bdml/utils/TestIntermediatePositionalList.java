@@ -1,8 +1,7 @@
-package edu.hanyang.utils;
+package io.github.hyerica_bdml.utils;
 
-import edu.hanyang.indexer.IntermediatePositionalList;
+import io.github.hyerica_bdml.indexer.IntermediatePositionalList;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

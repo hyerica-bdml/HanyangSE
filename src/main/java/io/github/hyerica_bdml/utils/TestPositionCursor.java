@@ -1,9 +1,9 @@
-package edu.hanyang.utils;
+package io.github.hyerica_bdml.utils;
 
 import java.io.IOException;
 import java.util.List;
 
-import edu.hanyang.indexer.PositionCursor;
+import io.github.hyerica_bdml.indexer.PositionCursor;
 
 public class TestPositionCursor extends PositionCursor {
     public List<Integer> posList;

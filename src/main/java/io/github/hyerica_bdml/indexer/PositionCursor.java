@@ -1,4 +1,4 @@
-package edu.hanyang.indexer;
+package io.github.hyerica_bdml.indexer;
 
 import java.io.IOException;
 
@@ -25,7 +25,7 @@ public abstract class PositionCursor {
     /**
      * @return
      * the term frequency in the current document
-     * @throws Exception
+     * @throws IOException
      * if the method is not implemented yet, it throws an exception
      */
     public abstract int getTermCount() throws IOException;

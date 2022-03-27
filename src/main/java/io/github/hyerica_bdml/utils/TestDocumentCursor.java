@@ -1,12 +1,12 @@
-package edu.hanyang.utils;
+package io.github.hyerica_bdml.utils;
 
 import java.io.IOException;
 import java.util.List;
 
-import edu.hanyang.indexer.DocumentCursor;
-import edu.hanyang.indexer.IntermediateList;
-import edu.hanyang.indexer.IntermediatePositionalList;
-import edu.hanyang.indexer.PositionCursor;
+import io.github.hyerica_bdml.indexer.DocumentCursor;
+import io.github.hyerica_bdml.indexer.IntermediateList;
+import io.github.hyerica_bdml.indexer.IntermediatePositionalList;
+import io.github.hyerica_bdml.indexer.PositionCursor;
 
 public class TestDocumentCursor extends DocumentCursor {
     public List<Integer> posList; // word1: docID1, nPos, pos1, pos2.., docID2

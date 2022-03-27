@@ -1,7 +1,13 @@
-package edu.hanyang.indexer;
+package io.github.hyerica_bdml.indexer;
 
 import java.io.IOException;
 
+/**
+ * The interface of accessing inverted list
+ * 
+ * @author Younghoon Kim
+ *
+ */
 public abstract class DocumentCursor {
     public enum LIST_TYPE { POSLIST, NONPOSLIST };
     public LIST_TYPE type = null;
@@ -30,21 +36,21 @@ public abstract class DocumentCursor {
     /**
      * @return
      * the number of documents in the inverted list
-     * @throws Exception
+     * @throws IOException
      * if the method is not implemented yet, it throws an exception
      */
     public abstract int getDocCount() throws IOException;
     /**
      * @return
      * the minimum document id
-     * @throws Exception
+     * @throws IOException
      * if the method is not implemented yet, it throws an exception
      */
     public abstract int getMinDocId() throws IOException;
     /**
      * @return
      * the maximum document id
-     * @throws Exception
+     * @throws IOException
      * if the method is not implemented yet, it throws an exception
      */
     public abstract int getMaxDocId() throws IOException;
